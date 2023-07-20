@@ -20,3 +20,6 @@ class Paddle(Turtle):
     def left(self):
         xcor = self.xcor() - MOVE
         self.goto(xcor, self.ycor())
+
+    def destroy_tile(self, tile):
+        tile.hideturtle()
