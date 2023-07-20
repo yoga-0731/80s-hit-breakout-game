@@ -4,11 +4,12 @@ MOVE = 20
 
 class Paddle(Turtle):
 
-    def __init__(self, position):
+    def __init__(self, position, color='white', width=1/2, length=5):
         super().__init__()
         self.shape('square')
-        self.color('white')
-        self.shapesize(stretch_wid=1/2, stretch_len=5)
+        self.color(color)
+        self.pencolor('white')
+        self.shapesize(stretch_wid=width, stretch_len=length)
         self.penup()
         self.goto(position)
 
